@@ -1,0 +1,149 @@
+/* ... all your previous styles ... */
+
+/* --- STYLES FOR THE PRODUCT LISTING PAGE --- */
+
+.product-page-container {
+    display: flex;
+    max-width: 1400px; /* Wider container for sidebar layout */
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    gap: 2rem;
+}
+
+/* 1. Sidebar */
+.sidebar {
+    flex-basis: 250px; /* Fixed width for sidebar */
+    flex-shrink: 0; /* Don't let it shrink */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    height: fit-content; /* Make it only as tall as its content */
+}
+
+.sidebar h3, .sidebar h4 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.sidebar h4 {
+    margin-top: 1.5rem;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 0.5rem;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.category-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-links li {
+    margin-bottom: 0.5rem;
+}
+
+.category-links .category-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #555;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-links .category-link:hover {
+    background-color: #f4f4f4;
+    color: #00aaff;
+}
+
+.category-links .category-link.active {
+    background-color: #00aaff;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 2. Main Product Section */
+.product-main {
+    flex-grow: 1; /* Takes up remaining space */
+}
+
+.product-main h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #e7f2f8;
+    padding-bottom: 0.8rem;
+}
+
+/* The .product-grid and .product-card styles from 
+   index.html are automatically applied here! */
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-page-container {
+        flex-direction: column; /* Stack sidebar and content */
+    }
+
+    .sidebar {
+        flex-basis: auto; /* Let it be auto-height */
+        width: 100%;
+    }
+}
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes logo/links and user buttons apart */
+    align-items: center; /* Vertically centers items */
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 0 1rem;
+}
+
+.nav-links a, .nav-user a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-user a:hover {
+    color: #00aaff; /* Highlight color */
+}
+
+.nav-user a {
+    padding-left: 1rem;
+}

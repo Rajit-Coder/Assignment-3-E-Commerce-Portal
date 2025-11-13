@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-R-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="NavigationMenu.html">MyStore</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="Product.html">Product Items</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+            <div class="nav-user">
+                <a href="Registration&Login.html">Login</a>
+                <a href="Registration&Login.html">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-slider">
+            <div class="slide" style="background-image: url('https://via.placeholder.com/1500x500/00aaff/ffffff?text=Big+Sale+Now!');">
+                <div class="slide-content">
+                    <h1>End of Season Sale</h1>
+                    <p>Get up to 50% off on selected items.</p>
+                    <a href="Product.html" class="btn-primary">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://via.placeholder.com/1500x500/333333/ffffff?text=New+Arrivals');">
+                <div class="slide-content">
+                    <h1>New Arrivals</h1>
+                    <p>Check out our latest collection.</p>
+                    <a href="Product.html" class="btn-primary">View Collection</a>
+                </div>
+            </div>
+            <button id="prev-slide" class="slide-nav-btn">&#10094;</button>
+            <button id="next-slide" class="slide-nav-btn">&#10095;</button>
+        </section>
+
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Media/AwesomeGadgets1.jpg" alt="Product Name">
+                    <div class="card-content">
+                        <h3>Awesome Gadget</h3>
+                        <p class="price">$1299.99</p>
+                        <button class="btn-add-to-cart" 
+                                data-name="Awesome Gadget" 
+                                data-price="$1299.99"
+                        >Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Media/tshirt1.jpg" alt="Product Name">
+                    <div class="card-content">
+                        <h3>Stylish T-Shirt</h3>
+                        <p class="price">$19.99</p>
+                        <button class="btn-add-to-cart"
+                                data-name="Stylish T-Shirt" 
+                                data-price="19.99"
+                        >Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Media/WirelessEarbuds1.jpg" alt="Product Name">
+                    <div class="card-content">
+                        <h3>Wireless Earbuds</h3>
+                        <p class="price">$399.99</p>
+                        <button class="btn-add-to-cart"
+                                data-name="Wireless Earbuds" 
+                                data-price="$49.99"
+                        >Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Media/CoffeeMug1.jpg" alt="Product Name">
+                    <div class="card-content">
+                        <h3>Coffee Mug</h3>
+                        <p class="price">$9.99</p>
+                        <button class="btn-add-to-cart"
+                                data-name="Coffee Mug" 
+                                data-price="$9.99"
+                        >Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MyStore. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="Home.js"></script>
+    <script src="Cart.js" defer></script>
+
+</body>
+</html>

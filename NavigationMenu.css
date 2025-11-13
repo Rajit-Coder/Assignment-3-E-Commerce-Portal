@@ -1,0 +1,53 @@
+/* Basic reset */
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes logo/links and user buttons apart */
+    align-items: center; /* Vertically centers items */
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 0 1rem;
+}
+
+.nav-links a, .nav-user a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-user a:hover {
+    color: #00aaff; /* Highlight color */
+}
+
+.nav-user a {
+    padding-left: 1rem;
+}

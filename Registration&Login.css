@@ -1,0 +1,89 @@
+/* ... all your previous styles for nav, home, products, etc. ... */
+
+/* --- STYLES FOR FORM PAGES (LOGIN/REGISTER) --- */
+
+.form-container {
+    /* This is the magic for centering */
+    display: flex;
+    justify-content: center; /* Horizontally centers the form */
+    align-items: center;     /* Vertically centers the form */
+    
+    /* Give it a background and make it fill the screen */
+    background-color: #f0f2f5; /* Light background */
+    padding: 3rem 1rem;
+    
+    /* Makes the container at least the full height 
+       minus the header (assuming 60px header) */
+    min-height: calc(100vh - 60px); 
+    
+
+}
+
+
+/* This is the style for the "box" itself */
+form {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px; /* Controls the width of the form box */
+}
+
+form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #00aaff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,170,255,0.1);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0088cc;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,198 @@
+/* --- CONTACT US PAGE STYLES --- */
+.contact-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.contact-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Form Section */
+.contact-form-section {
+    flex: 2;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-form-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    resize: vertical; /* Allows user to resize vertically only */
+}
+
+/* Info Section */
+.contact-info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 4px solid #00aaff; /* Nice accent color */
+}
+
+.info-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.info-card p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* --- ABOUT US PAGE STYLES --- */
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.about-hero {
+    background-color:aqua;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1.5rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.story-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1.5rem;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #00aaff;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .contact-wrapper, .about-content {
+        flex-direction: column;
+    }
+    
+    .contact-info-section {
+        order: -1; /* Puts info above form on mobile */
+    }
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 0 1rem;
+}
+
+.nav-links a, .nav-user a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-user a:hover {
+    color: #00aaff; /* Highlight color */
+}
+
+.nav-user a {
+    padding-left: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Pushes logo/links and user buttons apart */
+    align-items: center; /* Vertically centers items */
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+}
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

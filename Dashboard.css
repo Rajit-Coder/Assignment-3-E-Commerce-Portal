@@ -1,0 +1,257 @@
+/* ... (Keep all your existing Nav and Form styles here) ... */
+
+
+/* --- MORE BEAUTIFUL STYLES FOR THE DASHBOARD PAGE --- */
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    margin-top: 2rem;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+body {
+    background-color: #f0f2f5; /* Light subtle background for the whole page */
+}
+
+.dashboard-container {
+    max-width: 1000px; /* Slightly wider for more content */
+    margin: 2rem auto;
+    padding: 0 1.5rem; /* More padding on the sides */
+}
+
+.dashboard-container h2 {
+    font-size: 2.5rem; /* Larger welcome message */
+    color: #2c3e50; /* Darker, more professional text */
+    text-align: center;
+    margin-bottom: 2.5rem; /* More space below */
+    font-weight: 600;
+}
+
+.dashboard-container p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.dashboard-section {
+    background: #ffffff;
+    border-radius: 12px; /* Softer, more modern rounded corners */
+    padding: 2rem; /* More internal spacing */
+    margin-bottom: 2.5rem; /* More space between sections */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* More pronounced, soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.dashboard-section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-section h3 {
+    font-size: 1.8rem; /* Larger section titles */
+    color: #34495e;
+    margin-bottom: 1.5rem; /* More space below title */
+    border-bottom: 3px solid #e7f2f8; /* Thicker, softer divider */
+    padding-bottom: 0.8rem;
+    position: relative;
+}
+
+/* Accent line under section titles */
+.dashboard-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Position it correctly under the border */
+    width: 60px; /* Short accent line */
+    height: 3px;
+    background-color: #00aaff; /* Your primary brand color */
+    border-radius: 2px;
+}
+
+
+/* Order Item Styling */
+.order-item {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0; /* More padding */
+    border-bottom: 1px solid #ebf1f5; /* Lighter divider */
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-details p {
+    text-align: left; /* Override center alignment for section p tags */
+    margin: 0.3rem 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.order-details p strong {
+    color: #333;
+}
+
+.order-status {
+    text-align: right;
+    display: flex; /* Align status and button */
+    align-items: center;
+    gap: 1rem; /* Space between status text and button */
+}
+
+.order-status p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.95rem;
+    color: #666;
+}
+
+
+/* Wishlist Item Styling */
+.wishlist-item {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #ebf1f5;
+    gap: 1.5rem; /* Space between elements */
+}
+
+.wishlist-item:last-child {
+    border-bottom: none;
+}
+
+.wishlist-item img {
+    border-radius: 8px; /* Slightly more rounded images */
+    width: 60px; /* Slightly larger image */
+    height: 60px;
+    object-fit: cover; /* Ensures image fills space without distortion */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Small shadow for images */
+}
+
+.wishlist-item p {
+    flex-grow: 1;
+    font-size: 1.1rem; /* Larger product name */
+    color: #333;
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Override center alignment */
+}
+
+
+/* Button Styles (Updated) */
+.btn-secondary, .btn-danger {
+    padding: 0.7rem 1.4rem; /* More generous padding */
+    border: none;
+    border-radius: 6px; /* Slightly more rounded buttons */
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500; /* Slightly bolder text */
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+    white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Muted gray */
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Bootstrap-like red */
+}
+.btn-danger:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+/* Support Links */
+.support-links {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Arrange links horizontally */
+    flex-wrap: wrap;
+    gap: 1rem 2rem; /* Space between links */
+    margin-top: 1rem;
+}
+
+.support-links li {
+    margin-bottom: 0; /* Remove previous margin */
+}
+
+.support-links a {
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.support-links a:hover {
+    color: #0088cc;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .dashboard-container {
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+
+    .dashboard-container h2 {
+        font-size: 2rem;
+    }
+
+    .dashboard-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .dashboard-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .order-item, .wishlist-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align text to the left */
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    .order-status {
+        width: 100%; /* Take full width */
+        justify-content: space-between; /* Space out status and button */
+        margin-top: 0.5rem;
+    }
+
+    .wishlist-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .wishlist-item p {
+        width: 100%; /* Full width for product name */
+    }
+
+    .btn-danger, .btn-secondary {
+        width: 100%; /* Full width for buttons */
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .support-links {
+        flex-direction: column; /* Stack support links */
+        gap: 0.5rem;
+    }
+}
